@@ -2,18 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
-}
+body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
 
 @media print {
-  .no-print {
-    display: none !important;
-  }
-  .print-page {
-    page-break-after: always;
-  }
-  body {
-    background: white;
-  }
+  .no-print { display: none !important; }
+  .print-page { page-break-after: always; }
+  .print-show { display: block !important; }
+  body { background: white; }
+  nav, header { display: none !important; }
 }
+
+.print-show { display: none; }
