@@ -6,10 +6,39 @@ body { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif; }
 
 @media print {
   .no-print { display: none !important; }
-  .print-page { page-break-after: always; }
   .print-show { display: block !important; }
-  body { background: white; }
+  .print-inline { display: inline !important; }
+  .print-page { page-break-after: always; }
   nav, header { display: none !important; }
+  body { background: white; }
+
+  /* 드롭다운 화살표 제거 */
+  select {
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    background-image: none !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  /* input/textarea 테두리 제거 */
+  input, textarea {
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    resize: none !important;
+  }
+
+  /* 협력업체명 등 긴 텍스트 자동 축소 */
+  .fit-cell input {
+    font-size: 9pt !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    width: 100% !important;
+  }
 }
 
 .print-show { display: none; }
+.print-inline { display: none; }
