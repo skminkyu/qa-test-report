@@ -1,0 +1,9 @@
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+backend/dist/
+backend/qa_reports.db
+*.lock
+package-lock.json
+backend/package-lock.json
+frontend/package-lock.json
